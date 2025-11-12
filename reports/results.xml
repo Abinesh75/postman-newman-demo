@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Demo API Tests" tests="5" time="0.133">
+  <testsuite name="Health" id="9ccd63f4-32fe-4749-bd2b-44f4f4dc29e3" timestamp="2025-11-12T01:22:13.124Z" tests="2" failures="0" errors="0" time="0.078">
+    <testcase name="health 200" time="0.078" classname="Health"/>
+    <testcase name="status ok" time="0.078" classname="Health"/>
+  </testsuite>
+  <testsuite name="Get Users" id="d4c97625-6af6-486e-ac23-3efe36d02633" timestamp="2025-11-12T01:22:13.124Z" tests="2" failures="0" errors="0" time="0.007">
+    <testcase name="users 200" time="0.007" classname="GetUsers"/>
+    <testcase name="users is array" time="0.007" classname="GetUsers"/>
+  </testsuite>
+  <testsuite name="Create User" id="c39f5a3a-424d-46fe-8027-dfb8b35a1a6f" timestamp="2025-11-12T01:22:13.124Z" tests="2" failures="0" errors="0" time="0.036">
+    <testcase name="create user 201" time="0.036" classname="CreateUser"/>
+    <testcase name="response has id and name" time="0.036" classname="CreateUser"/>
+  </testsuite>
+  <testsuite name="Get Created User" id="ee948305-8af1-4bea-884f-4de9309accd7" timestamp="2025-11-12T01:22:13.124Z" tests="1" failures="0" errors="0" time="0.007">
+    <testcase name="get created user 200" time="0.007" classname="GetCreatedUser"/>
+  </testsuite>
+  <testsuite name="Delete Created User" id="e31d23d0-7901-45bd-97d6-9e75ce239b73" timestamp="2025-11-12T01:22:13.124Z" tests="1" failures="0" errors="0" time="0.005">
+    <testcase name="delete created user 200" time="0.005" classname="DeleteCreatedUser"/>
+  </testsuite>
+</testsuites>
