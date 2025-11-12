@@ -2,7 +2,7 @@ name: Run Postman API Tests
 
 # This tells GitHub when to run this pipeline
 on:
-  workflow_dispatch:
+  
   push:         # when you push new code
   pull_request: # or create a pull request
 
