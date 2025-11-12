@@ -5,18 +5,18 @@
   },
   "item": [
     {
-      "name": "Health",
+      "name": "sample",
       "request": {
         "method": "GET",
         "header": [],
-        "url": "{{baseUrl}}/health"
+        "url": "{{baseUrl}}/sample"
       },
       "event": [
         {
           "listen": "test",
           "script": {
             "exec": [
-              "pm.test(\"health 200\", function () {",
+              "pm.test(\"sample 200\", function () {",
               "    pm.response.to.have.status(200);",
               "});",
               "",
