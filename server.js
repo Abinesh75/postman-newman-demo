@@ -9,7 +9,7 @@ let users = [
 ];
 
 // Health check
-app.get('/', (req, res) => res.json({ status: 'ok' }));
+app.get('/health', (req, res) => res.json({ status: 'ok' }));
 
 // Get all users
 app.get('/users', (req, res) => res.json(users));
