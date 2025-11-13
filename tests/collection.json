@@ -95,6 +95,41 @@
       ]
     },
     {
+      "name": "Update User",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"Updated User\"}"
+        },
+        "url": "{{baseUrl}}/users/{{createdId}}"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"update user 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "var json = pm.response.json();",
+              "pm.test(\"updated user name\", function () {",
+              "    pm.expect(json.name).to.eql('Updated User');",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ]
+    },
+    {
       "name": "Get Created User",
       "request": {
         "method": "GET",
@@ -127,7 +162,7 @@
           "listen": "test",
           "script": {
             "exec": [
-              "pm.test(\"delete created user 200\", function () {",
+              "pm.test(\"delete user 200\", function () {",
               "    pm.response.to.have.status(200);",
               "});"
             ],
