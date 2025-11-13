@@ -4,8 +4,16 @@ const app = express();
 app.use(express.json());
 
 let users = [
-  { id: 1, name: "Arun Kumar" },
-  { id: 2, name: "Priya Raj" }
+  { id: 1, name: "Arun Kumar", age: 28, city: "Chennai", job: "Software Engineer" },
+  { id: 2, name: "Priya Raj", age: 26, city: "Coimbatore", job: "Data Analyst" },
+  { id: 3, name: "Karthik S", age: 30, city: "Madurai", job: "Project Manager" },
+  { id: 4, name: "Divya Lakshmi", age: 24, city: "Trichy", job: "UI/UX Designer" },
+  { id: 5, name: "Vignesh M", age: 29, city: "Salem", job: "Backend Developer" },
+  { id: 6, name: "Anitha Devi", age: 27, city: "Tirunelveli", job: "QA Engineer" },
+  { id: 7, name: "Surya Narayanan", age: 32, city: "Erode", job: "DevOps Engineer" },
+  { id: 8, name: "Meena Shree", age: 25, city: "Thanjavur", job: "Frontend Developer" },
+  { id: 9, name: "Rajesh Kumar", age: 31, city: "Vellore", job: "System Administrator" },
+  { id: 10, name: "Lakshmi Priya", age: 23, city: "Tuticorin", job: "Intern Developer" }
 ];
 
 // Health check
