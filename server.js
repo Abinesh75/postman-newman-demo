@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 let users = [
-[
+
   { id: 1, name: "Arun Kumar", age: 28, city: "Chennai", job: "Software Engineer" },
   { id: 2, name: "Priya Raj", age: 26, city: "Coimbatore", job: "Data Analyst" },
   { id: 3, name: "Karthik S", age: 30, city: "Madurai", job: "Project Manager" },
@@ -15,7 +15,7 @@ let users = [
   { id: 8, name: "Meena Shree", age: 25, city: "Thanjavur", job: "Frontend Developer" },
   { id: 9, name: "Rajesh Kumar", age: 31, city: "Vellore", job: "System Administrator" },
   { id: 10, name: "Lakshmi Priya", age: 23, city: "Tuticorin", job: "Intern Developer" }
-]
+
 ];
 
 // Health check
