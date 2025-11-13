@@ -11,31 +11,31 @@ jobs:
     runs-on: ubuntu-latest  # GitHub gives you a free Linux VM to run the job
 
     steps:
-      # 1️⃣  Download your repository code
+      # Download your repository code
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣  Setup Node.js environment
+      # Setup Node.js environment
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      # 3️⃣  Install dependencies (Express, Newman, etc.)
+      # Install dependencies (Express, Newman, etc.)
       - name: Install dependencies
         run: npm ci
 
-      # 4️⃣  Start the server in the background
+      # Start the server in the background
       - name: Start server
         run: |
           npm start &
           sleep 3  # wait 3 seconds for the server to start
 
-      # 5️⃣  Run Postman tests with Newman
+      # Run Postman tests with Newman
       - name: Run Newman tests
         run: npm run test:postman
 
-      # 6️⃣  Upload reports as artifacts (you can download them later)
+      # Upload reports as artifacts (you can download them later)
       - name: Upload test reports
         if: always()
         uses: actions/upload-artifact@v4
