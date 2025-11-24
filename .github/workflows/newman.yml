@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest  # GitHub gives you a free Linux VM to run the job
+    runs-on: ubuntu-latest # GitHub gives you a free Linux VM to run the job
 
     steps:
       # Download your repository code
